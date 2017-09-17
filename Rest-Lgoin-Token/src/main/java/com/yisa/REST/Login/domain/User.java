@@ -3,6 +3,7 @@ package com.yisa.REST.Login.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
@@ -14,6 +15,8 @@ public class User {
     private String username;
     @Column(name = "password")
     private String password;
+
+    @Id
     @Column(name = "id")
     private long id ;
     @Column(name = "nickname")

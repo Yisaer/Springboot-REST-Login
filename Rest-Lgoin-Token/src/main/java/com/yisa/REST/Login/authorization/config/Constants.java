@@ -1,4 +1,4 @@
-package com.yisa.REST.Login.config;
+package com.yisa.REST.Login.authorization.config;
 
 public class Constants {
 
