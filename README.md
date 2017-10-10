@@ -35,7 +35,7 @@ Obviously `logout` is a handler with authorization control , so it is a good exa
 
 ```
 
-@RequestMapping(method =  RequestMethod.DELETE) 
+     @RequestMapping(method =  RequestMethod.DELETE) 
      @Authorization 
      public ResponseEntity<ResultModel> logout(@CurrentUser User user ){ 
          if(user == null ){ 
