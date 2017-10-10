@@ -13,7 +13,8 @@ I use Mysql for data persistence to save the information for users ,  and use Re
  
 for example
 
-```
+```properties
+
 #MySQL
 spring.datasource.url=jdbc:mysql://127.0.0.1:3306/login?useUnicode=true&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=round&autoReconnect=true
 spring.datasource.username=root
@@ -33,7 +34,7 @@ For each Http request you want to contorl , add  `Authorization` in HTTP header 
 Obviously `logout` is a handler with authorization control , so it is a good example to show how to use it.
 
 
-```
+```java
 
      @RequestMapping(method =  RequestMethod.DELETE) 
      @Authorization 
